@@ -57,6 +57,8 @@ mean(pull(sample_df, character_var))
 mean(pull(sample_df, factor_var))
 ```
 
+## Mean Results
+The mean works for the numeric and logical variables. The logical variable has a mean of 0.4 because four out of ten values are TRUE, which R treats as 1. The character and factor variables return NA because they are not numeric or logical values.
 
 ```{r numeric_conversion, results='hide', warning=FALSE}
 as.numeric(pull(sample_df, logical_var))
